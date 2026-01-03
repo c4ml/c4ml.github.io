@@ -1,1 +1,238 @@
-Initial commit
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C4ML 2026 - Compilers for Machine Learning</title>
+  <meta name="description"
+    content="7th C4ML Workshop at CGO 2026. Forum for researchers and practitioners in machine learning compilers, hardware mapping, and optimization.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="hero-title">C4ML 2026</h1>
+      <p class="hero-subtitle">7th Workshop on Compilers for Machine Learning</p>
+      <div class="hero-meta">
+        <span>📅 Sunday, February 1, 2026</span>
+        <span>📍 Sydney, Australia (ICC Sydney)</span>
+        <span>🔗 Co-located with <a href="https://2026.cgo.org/" target="_blank">CGO 2026</a></span>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="scope">
+    <div class="container section-content">
+      <h2>Scope</h2>
+      <p>
+        Machine learning applications are becoming ubiquitous in large-scale production systems. With that growth and
+        the scaling in data volume and model complexity, the focus on efficiently executing machine learning models has
+        become even greater. The push for increased energy efficiency has led to the emergence of diverse heterogeneous
+        system and accelerator architectures.
+      </p>
+      <p>
+        In parallel, model complexity and diversity pushed for higher productivity systems, more powerful programming
+        abstractions, type systems, language embeddings, frameworks and libraries. Compilers have historically been the
+        bridge between programmer efficiency and high performance code, allowing the expression of code that remains
+        understandable and productive to port and extend, while producing high-performance code for diverse
+        architectures. As such, compiler techniques have been increasingly incorporated into machine learning
+        frameworks. This goes both ways: given the broadening gap between high-level constructs and hardware
+        accelerators, compilers in machine learning frameworks also emerged as natural clients of machine learning
+        techniques, from domain-specific heuristics to autotuning.
+      </p>
+      <p>
+        This workshop aims to highlight cutting edge work and research that incorporates compiler techniques and
+        algorithms with optimizing machine learning workloads. The workshop topics span from high-level abstract
+        representations to code generation for accelerators.
+      </p>
+    </div>
+  </section>
+
+  <section id="program">
+    <div class="container section-content">
+      <h2>Program</h2>
+      <p>
+        The workshop features 10 presentations from leading ML compiler experts from industry and academia.<br>
+      </p>
+
+      <div class="session">
+        <div class="session-header">
+          <h3>Opening Remarks</h3>
+          <span class="session-time">11:00 - 11:10</span>
+        </div>
+      </div>
+
+      <div class="session">
+        <div class="session-header">
+          <h3>Session 1: High-Level Optimization, Search, and Analysis</h3>
+          <span class="session-time">11:10 - 12:30</span>
+        </div>
+
+        <div class="talk">
+          <div class="talk-title">Magellan: Autonomous Discovery of Novel Compiler Optimization Heuristics with
+            AlphaEvolve</div>
+          <div class="talk-authors">Hongzheng Chen, Alexander Novikov, Ngân (NV) Vũ, Hanna Alam, Zhiru Zhang, Aiden
+            Grossman, Mircea Trofin, Amir Yazdanbakhsh</div>
+          <div class="talk-affiliation">Google, Google DeepMind, and Cornell University</div>
+        </div>
+
+        <div class="talk">
+          <div class="talk-title">XTC: A Research Platform for Optimizing AI Workload Operators</div>
+          <div class="talk-authors">Hugo Pompougnac, Christophe Guillon, Sylvain Noiry, Alban Dutilleul, Guillaume
+            Iooss, Fabrice Rastello</div>
+          <div class="talk-affiliation">Inria, Univ. Grenoble Alpes, CNRS, Grenoble INP</div>
+        </div>
+
+        <div class="talk">
+          <div class="talk-title">Analyzing the complexities of graph compilers for machine learning</div>
+          <div class="talk-authors">Kshitij Jain, Satyam Srivastava</div>
+          <div class="talk-affiliation">d-Matrix Corporation</div>
+        </div>
+      </div>
+
+      <div class="session text-center">
+        <div class="session-header">
+          <h3>Lunch</h3>
+          <span class="session-time">12:30 - 13:30</span>
+        </div>
+      </div>
+
+      <div class="session">
+        <div class="session-header">
+          <h3>Session 2: Emerging Accelerators and Hardware Mapping</h3>
+          <span class="session-time">13:30 - 15:00</span>
+        </div>
+
+        <div class="talk">
+          <div class="talk-title">DeepTools: A Full-Stack Machine Learning Compiler for the IBM Spyre Accelerator</div>
+          <div class="talk-authors">Prasanth Chatarasi, Shubham Jain, Alberto Mannari, Sanchari Sen, Swagath
+            Venkataramani, Viji Srinivasan</div>
+          <div class="talk-affiliation">IBM Research</div>
+        </div>
+
+        <div class="talk">
+          <div class="talk-title">From Triton to AMD NPU: Compiler-Driven Kernel Generation with MLIR-AIR</div>
+          <div class="talk-authors">Erwei Wang, Emily Furst, Yiannis Papadopoulos, Aaron Knoll, Mike Chu, Joseph Melber,
+            Stephen Neuendorffer, Samuel Bayliss</div>
+          <div class="talk-affiliation">AMD and AMD Research</div>
+        </div>
+
+        <div class="talk">
+          <div class="talk-title">From PyTorch to Calyx: An Open-Source Compiler Toolchain for ML Accelerators</div>
+          <div class="talk-authors">Jiahan Xie, Evan Williams, Adrian Sampson</div>
+          <div class="talk-affiliation">University of California, Santa Cruz and Cornell University</div>
+        </div>
+      </div>
+
+      <div class="session">
+        <div class="session-header">
+          <h3>Break</h3>
+          <span class="session-time">15:00 - 15:30</span>
+        </div>
+      </div>
+
+      <div class="session">
+        <div class="session-header">
+          <h3>Session 3: Kernel Generation and Data Movement</h3>
+          <span class="session-time">15:30 - 17:30</span>
+        </div>
+
+        <div class="talk">
+          <div class="talk-title">Defeat the Heap: Zero-Copy Data Movement in AXI4MLIR</div>
+          <div class="talk-authors">Elam Cohavi, Nicolas Bohm Agostini, Jude Haris, Antonino Tumeo, David Kaeli, José
+            Cano</div>
+          <div class="talk-affiliation">University of Glasgow, Northeastern University, and Pacific Northwest National
+            Laboratory</div>
+        </div>
+
+        <div class="talk">
+          <div class="talk-title">Library Liberation: Competitive Performance Matmul Through Compiler-composed
+            Nanokernels</div>
+          <div class="talk-authors">Arun Thangamani, Md Asghar Ahmad Shahid, Adam Siemieniuk, Rolf Morel, Renato Golin,
+            Alexander Heinecke</div>
+          <div class="talk-affiliation">Intel Corporation</div>
+        </div>
+
+        <div class="talk">
+          <div class="talk-title">Enabling Compiler-Driven Transformation of Attention Variants</div>
+          <div class="talk-authors">Ivan Ho, Kunwar Grover, Tobias Grosser</div>
+          <div class="talk-affiliation">University of Cambridge and AMD</div>
+        </div>
+
+        <div class="talk">
+          <div class="talk-title">Systematic Code Generation for ML Computations based on Multi-Dimensional
+            Homomorphisms</div>
+          <div class="talk-authors">Ari Rasch, Richard Schulze</div>
+          <div class="talk-affiliation">University of Muenster</div>
+        </div>
+      </div>
+
+      <div class="session">
+        <div class="session-header">
+          <h3>Closing</h3>
+          <span class="session-time">17:30</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="organizers">
+    <div class="container section-content">
+      <h2>Organizers</h2>
+      <div class="organizer-list">
+        <div class="organizer-card">
+          <div class="organizer-name">Jacques Pienaar</div>
+          <div class="organizer-role">Google</div>
+        </div>
+        <div class="organizer-card">
+          <div class="organizer-name">Mehdi Amini</div>
+          <div class="organizer-role">Nvidia</div>
+        </div>
+        <div class="organizer-card">
+          <div class="organizer-name">Michael Roberts</div>
+          <div class="organizer-role">Meta</div>
+        </div>
+        <div class="organizer-card">
+          <div class="organizer-name">Markus Böck</div>
+          <div class="organizer-role">ETH Zurich</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container section-content" style="text-align: center;">
+      <h2>Contact Us</h2>
+      <p>
+        For any questions, please contact us at:<br>
+        <a href="mailto:c4ml@googlegroups.com" style="font-size: 1.2rem; font-weight: 600;">c4ml@googlegroups.com</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 C4ML Workshop. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
